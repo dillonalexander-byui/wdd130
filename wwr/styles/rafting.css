@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Fragment+Mono:ital@0;1&display=swap');
+
+:root {
+    --primary-color: #3b5249;
+    --secondary-color: #a4b494;
+    --accent1-color: #519872;
+    --accent2-color: #34252f;
+
+    --heading-font: 'Balthazar', Serif;
+    --paragraph-font: 'Fragment Mono', Monospace;
+
+    --nav-background-color: #d4e09b;
+    --nav-link-color: #0000ff;
+    --nav-hover-link-color: #ff0000;
+    --nav-hover-background-color: #ffffff;
+}
+
+body {
+    max-width: 1024px;
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+p {
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: #0008;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #519872dd;
+    padding: 10px;
+}
+
+.hero article img {
+    float: right;
+    width: auto;
+    height: 150px;
+}
+
+.hero article p {
+    color: white;
+}
+
+footer nav a img {
+    width: 50px;
+    height: auto;
+}
