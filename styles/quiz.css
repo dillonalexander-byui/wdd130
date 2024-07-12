@@ -19,7 +19,7 @@ header {
 h1 {
     margin: 1rem;
     font-size: 1.5em;
-    color: darkcyan;
+    color: blue;
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ fieldset {
 
 legend {
     padding: 0.5rem;
-    color: darkcyan;
+    color: blue;
     font-size: 1.3em;
 }
 
@@ -68,7 +68,7 @@ input[type="checkbox"] {
 
 button {
     margin: 1rem;
-    background-color: darkcyan;
+    background-color: blue;
     color: #fff;
     border: none;
     border-radius: 0.5rem;
