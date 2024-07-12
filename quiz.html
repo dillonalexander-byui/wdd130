@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Form | Dillon Alexander</title>
+    <meta name="description" content="A sample quiz made with HTML and CSS">
+    <meta name="author" content="Dillon Alexander">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <main>
+        <header>
+        <h1>Simple HTML and CSS Quiz</h1>
+        </header>
+        <form>
+            <fieldset>
+                <label for="q1">What does HTML mean?</label>
+                <input type="text" name="q1" id="q1">
+            </fieldset>
+            <fieldset>
+                <label for="q2">How old is CSS? What year did it come out?</label>
+                <textarea name="q2" id="q2" rows="3" placeholder="Google is your friend."></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="q3">How many things can be colored using CSS?</label>
+                <select name="q3" id="q3">
+                    <option value="" selected disabled>Make a choice...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="everything">Everything</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="q4">What is the current version of HTML?</label>
+                <input type="number" name="q4" id="q4">
+            </fieldset>
+            <button type="submit">Submit the Quiz</button>
+        </form>
+    </main>
+</body>
+</html>
