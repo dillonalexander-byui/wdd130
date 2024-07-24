@@ -3,7 +3,7 @@
 :root {
     --primary-color: #3b5249;
     --secondary-color: #a4b494;
-    --accent1-color: #519872;
+    --accent1-color: #025412;
     --accent2-color: #34252f;
 
     --heading-font: 'Balthazar', Serif;
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    color: var(--secondary-color);
+    color: var(--accent2-color);
 }
 
 header {
@@ -45,18 +45,21 @@ header img {
 }
 
 header nav {
+    display: flex;
     grid-column: 3;
     grid-row: 3;
+    flex-direction: row;
     text-align: center;
     text-wrap: nowrap;
     background-color: #a4b494;
-    height: 20px;
+    height: 25px;
 }
 
 header nav a {
     border: solid medium #34252f;
     padding-left: 10px;
     padding-right: 10px;
+    color: black;
 }
 
 ul {
@@ -65,17 +68,25 @@ ul {
 
 ul li {
     padding: 15px 25px;
+    color: white;
 }
 
 div {
     background-color: var(--accent1-color);
+    color: white;
     border: 2px solid thin;
-    border-color: var(--accent2-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 15px;
-    margin: 10px;
+    box-sizing: border-box;
+    border-color: var(--accent2-color);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     display: grid;
+}
+
+div h1 {
+    text-wrap: wrap;
 }
 
 div ul {
@@ -148,17 +159,19 @@ button:hover {
     background-color: black;
 }
 
-section {
+.history {
+    display: grid;
     grid-template-columns: 33% 34% 33%;
     grid-template-rows: 50px 1fr;
+    padding: 20px;
 }
 
-section h2 {
+.history h2 {
     text-align: center;
     grid-row: 1;
 }
 
-section img {
+.history img {
     width: 200px;
     height: auto;
     grid-column: 2;
@@ -168,8 +181,48 @@ section img {
     margin-right: auto;
 }
 
+.adv {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 50px 1fr;
+    padding: 20px;
+}
+
+.adv h2 {
+    text-align: center;
+    grid-row: 1;
+}
+
+.adv img {
+    width: 200px;
+    height: auto;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+}
+
+.home-image {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-image figure img {
+    width: 200px;
+    height: auto;
+}
+
 p {
-    color: var(--primary-color);
+    color: black;
+    font-family: var(--paragraph-font);
 }
 
 a {
@@ -190,7 +243,7 @@ figcaption {
 
 .hero img {
     display: block;
-    width: 100%;
+    width: 1170px;
     height: auto;
 }
 
@@ -210,7 +263,7 @@ figcaption {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: #519872dd;
+    background-color: #025412dd;
     padding: 10px;
 }
 
@@ -297,6 +350,101 @@ figcaption {
     display: grid;
     align-items: center;
     text-align: left;
+}
+
+.home-form {
+    display: grid;
+    grid-column: 1;
+    float: left;
+}
+
+.home-p {
+    grid-column: 2;
+    text-align: center;
+    padding: 20px;
+    margin: 75px;
+}
+
+.home-image1 {
+    grid-column: 1;
+}
+
+.home-image2 {
+    grid-column: 3;
+}
+
+.trips-p {
+    width: 1200px;
+}
+
+.trips-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 1200px;
+}
+
+.trips-section p {
+    color: white;
+}
+
+.trips-section img {
+    width: 200px;
+}
+
+.trips-section-p1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.trips-section-p2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.trips-section-p3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.trips-section-img1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.trips-section-img2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.trips-section-img3 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.trip-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.trip-details table {
+    border-spacing: 0;
+}
+
+.trip-details table tr th {
+    border-bottom: 1px solid white;
+}
+
+.trip-details table tr td {
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom: 1px solid gray;
 }
 
 .column1 {
